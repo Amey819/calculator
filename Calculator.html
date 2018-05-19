@@ -1,0 +1,93 @@
+<html>
+
+
+<head>
+ <title> Calculator
+ </title>
+ 
+</head>
+
+<script type  = "text/javascript">
+	function displayval(n)
+	{
+		Calculator.txt1.value += n;
+	}
+	function clear()
+	{
+		document.getElementById('txt1').value = "";
+	}
+	
+	 
+
+</script>
+<style>
+.main{
+
+	padding-top : 100px;
+	background-color : skyblue;
+}
+	#txt{
+		width : 220px;
+		height: 45px;
+		text-align : right;
+	
+
+	}
+
+	#b{
+		width : 50px;
+		height : 50px;
+		font-size : 13px;
+	}
+</style>
+
+<body bgcolor = "skyblue">
+	
+	
+	<form name = "Calculator" >
+	<div class = "main" >
+	<Table name = "CalcT" align = "center" padding : "10px">
+		<tr>
+			<td colspan = "6"><input type = "text" id = "txt" name = "txt1" style = "text-align:right"></td>
+		</tr>
+
+		<tr>	
+			<td><input type = "button" id = "b" name = "b1" value = "1" onclick = "displayval(b1.value)"> </td>
+			<td><input type = "button" id = "b" name = "b2" value = "2" onclick = "displayval(b2.value)"></td>
+			<td><input type = "button" id = "b" name = "b3" value = "3" onclick = "displayval(b3.value)"> </td>
+			<td><input type = "button" id = "b" name = "add" value = "+" onclick = "displayval(add.value)"> </td>
+		</tr>
+		<tr>
+			<td><input type = "button" id = "b" name = "b4" value = "4" onclick = "displayval(b4.value)"> </td>
+			<td><input type = "button" id = "b" name = "b5" value = "5" onclick = "displayval(b5.value)"> </td>
+			<td><input type = "button" id = "b" name = "b6" value = "6" onclick = "displayval(b6.value)"> </td>
+			<td><input type = "button" id = "b" name = "sub" value = "-" onclick = "displayval(sub.value)"></td>
+		</tr>
+		<tr>
+			<td><input type = "button" id = "b"name = "b7" value = "7" onclick = "displayval(b7.value)"> </td>
+			<td><input type = "button" id = "b" name = "b8" value = "8" onclick = "displayval(b8.value)"> </td>
+			<td><input type = "button" id = "b" name = "b9" value = "9" onclick = "displayval(b9.value)"> </td>
+			<td><input type = "button" id = "b" name = "div" value = "/" onclick = "displayval(div.value)"> </td>
+		</tr>
+	<tr>
+	<td><label for="#">  </label></td>
+	<td col = "center"><input type = "button" id = "b" name = "b0" value = "0" onclick = "displayval(b0.value)"> <td>
+	<td><input type = "button" id = "b" name = "mul" value = "*" onclick = "displayval(mul.value)"></td>
+	</tr>
+	<tr>
+	<td><label for="#">  </label></td>
+	<td colspan = "3"><input type = "button"  id = "b"  name = "val" value = "Equals" onclick = "Calculator.txt1.value = eval(Calculator.txt1.value)"> </td>
+	</tr>
+	<tr>
+	<td><label for="#">  </label></td>
+	<td><input type = "button" id = "b" name = "clear" value = "Clear" onclick = "Calculator.txt1.value = '' "> </td>
+	</tr>
+	</Table>
+	
+
+	</form>
+	</div>
+
+</body>
+
+<html>
